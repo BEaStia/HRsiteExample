@@ -24,7 +24,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('skill_level', models.IntegerField(default=0)),
-                ('applicator_id', models.ForeignKey(to='polls.Applicator')),
+                ('applicator', models.ForeignKey(to='polls.Applicator')),
             ],
         ),
         migrations.CreateModel(

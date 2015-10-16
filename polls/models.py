@@ -19,7 +19,7 @@ class Skill(models.Model):
 	applicators = models.ManyToManyField(Applicator, through='ApplicatorSkill')
 
 class ApplicatorSkill(models.Model):
-	applicator_id = models.ForeignKey(Applicator)
+	applicator = models.ForeignKey(Applicator)
 	skill = models.ForeignKey(Skill)
 	skill_level = models.IntegerField(default = 0)
 
