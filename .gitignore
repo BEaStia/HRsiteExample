@@ -48,4 +48,6 @@ crashlytics.properties
 crashlytics-build.properties
 
 db.sqlite3
+polls/*.pyc
+HRsite/*.pyc
 
