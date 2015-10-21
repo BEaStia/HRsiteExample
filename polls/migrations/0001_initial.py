@@ -16,7 +16,8 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('name', models.CharField(default=b'', max_length=200)),
                 ('info', models.TextField()),
-                ('avatar_url', models.FilePathField()),
+                ('avatar_url', models.CharField(default=b'', max_length=255)),
+                ('region', models.IntegerField(default=-1)),
             ],
         ),
         migrations.CreateModel(
